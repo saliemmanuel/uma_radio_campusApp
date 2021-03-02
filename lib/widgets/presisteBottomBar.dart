@@ -14,7 +14,7 @@ class PersisBottomBarWidget extends StatelessWidget {
                 Icons.skip_previous_rounded,
                 color: ColorsApp.substileColors,
               ),
-              iconSize: 55.0,
+              iconSize: 40.0,
               onPressed: () {}),
           SizedBox(width: 15.0),
           IconButton(
@@ -22,7 +22,7 @@ class PersisBottomBarWidget extends StatelessWidget {
                 Icons.play_arrow_rounded,
                 color: ColorsApp.actionColors,
               ),
-              iconSize: 60.0,
+              iconSize: 45.0,
               onPressed: () {}),
           SizedBox(width: 15.0),
           IconButton(
@@ -30,7 +30,7 @@ class PersisBottomBarWidget extends StatelessWidget {
                 Icons.skip_next_rounded,
                 color: ColorsApp.substileColors,
               ),
-              iconSize: 55.0,
+              iconSize: 40.0,
               onPressed: () {}),
         ],
       ),

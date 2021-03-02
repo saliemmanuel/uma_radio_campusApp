@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uma_radio_campus/screens/homeStationPage.dart';
 import 'package:uma_radio_campus/utils/colorsApp.dart';
 import 'package:uma_radio_campus/utils/languageFile.dart';
 
@@ -17,18 +18,18 @@ class _NewStationPageState extends State<NewStationPage> {
       children: [
         SizedBox(height: 25.0),
         custCard(
-            label: LanguageFiles.nameStationTextEn,
-            hintText: LanguageFiles.nameStationTextEn,
+            label: francaisOuAnglais ? LanguageFiles.nameStationTextFr : LanguageFiles.nameStationTextEn,
+            hintText: francaisOuAnglais ? LanguageFiles.nameStationTextFr:LanguageFiles.nameStationTextEn,
             controller: nameStationController),
         SizedBox(height: 15.0),
         custCard(
-            label: LanguageFiles.descriptionTextEn,
-            hintText: LanguageFiles.descriptionTextEn,
+            label: francaisOuAnglais ? LanguageFiles.descriptionTextFr : LanguageFiles.descriptionTextEn,
+            hintText: francaisOuAnglais ? LanguageFiles.descriptionTextFr : LanguageFiles.descriptionTextEn,
             controller: descriptionStationController),
         SizedBox(height: 15.0),
         custCard(
-            label: LanguageFiles.freqTextEn,
-            hintText: LanguageFiles.freqTextEn,
+            label: francaisOuAnglais ? LanguageFiles.freqTextFr : LanguageFiles.freqTextEn,
+            hintText: francaisOuAnglais ? LanguageFiles.freqTextFr : LanguageFiles.freqTextEn,
             controller: freqController),
         SizedBox(height: 15.0),
         Padding(
@@ -37,7 +38,7 @@ class _NewStationPageState extends State<NewStationPage> {
             children: [
               Expanded(
                 child: MaterialButton(
-                  child: Text(LanguageFiles.addTextEn, style: TextStyle(color: ColorsApp.textColors),),
+                  child: Text(francaisOuAnglais ? LanguageFiles.addTextFr :  LanguageFiles.addTextEn, style: TextStyle(color: ColorsApp.textColors),),
                   color: ColorsApp.actionColors,
                   onPressed: () {},
                 ),
@@ -45,7 +46,7 @@ class _NewStationPageState extends State<NewStationPage> {
               SizedBox(width: 15.0),
               Expanded(
                 child: MaterialButton(
-                  child: Text(LanguageFiles.cancelTextEn,style: TextStyle(color: ColorsApp.textColors),),
+                  child: Text(francaisOuAnglais ? LanguageFiles.cancelTextFr : LanguageFiles.cancelTextEn,style: TextStyle(color: ColorsApp.textColors),),
                   color: ColorsApp.substileColors,
                   onPressed: () {},
                 ),

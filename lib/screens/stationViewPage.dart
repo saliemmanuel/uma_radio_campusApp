@@ -16,7 +16,7 @@ class _StationViewPageState extends State<StationViewPage> {
       appBar: AppBar(
         elevation: 0,
         title: Text(
-          LanguageFiles.titleText,
+          LanguageFiles.titleAppText,
           style: TextStyle(color: ColorsApp.substileColors),
         ),
         actions: [
@@ -28,7 +28,6 @@ class _StationViewPageState extends State<StationViewPage> {
       ),
       body: ListView(
         children: [
-         
           Padding(
             padding: const EdgeInsets.all(25.0),
             child: Container(
@@ -70,7 +69,7 @@ class _StationViewPageState extends State<StationViewPage> {
                     color: ColorsApp.textColors,
                   ),
                 ),
-               
+
                 Text(
                   "Description radio",
                   style: TextStyle(

@@ -1,7 +1,7 @@
 class LanguageFiles {
   static String erroCasqueMessageFr ="Pour écouter la Radio, branchez un casque(utilisé comme une antenne)";
   static String erroCasqueMessageEn = " ds";
-  static String titleText = "Radio Campus";
+  static String titleAppText = "Radio Campus";
   static String salutationMessageFr = "Bonjour";
   static String salutationMessageEn = "Hello";
   static String allStationTextFr = "Toute les stations";
@@ -20,4 +20,6 @@ class LanguageFiles {
   static String addTextEn = "Add station";
   static String cancelTextFr = "Abandonner";
   static String cancelTextEn = "Cancel";
+  static String  langueTextFr = "Selectionner la Langue ";
+  static String  langueTextEn = "Select Language";
 }
